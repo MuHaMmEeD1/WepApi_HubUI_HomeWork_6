@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="roomsInput">
+      <section>
+        <label for="user">Username</label>
+        <input type="text" id="user" />
+      </section>
+    </section>
+
+    <section id="rooms"></section>
+
+    <section id="room" style="display: none">
+      <h2 id="info"></h2>
+      <section id="time-section">
+        <h2>Time : <span id="time"></span></h2>
+      </section>
+
+      <section style="display: flex">
+        <h1 id="offerValue" style="margin: 20px"></h1>
+        <h1 id="offerValue2" style="margin: 20px"></h1>
+      </section>
+
+      <button id="offerBtn" onclick="IncreaseOffer()">Increase Offer</button>
+      <button id="closeBtn" onclick="CloseOffer()">Close Offer</button>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
